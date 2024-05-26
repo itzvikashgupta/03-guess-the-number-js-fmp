@@ -1,0 +1,127 @@
+/***** Theme Section *****/
+:root {
+  --clr-primary-400: hsl(215, 88%, 51%);
+  --clr-secondary-800: #111827;
+
+  --clr-neutral-400: hsl(0, 0%, 94%);
+  --clr-neutral-100: hsla(0, 0%, 100%, 1);
+
+  --ff-base: "Roboto", sans-serif;
+  --ff-accent: "Poppins", sans-serif;
+
+  --fs-400: 1rem;
+  --fs-800: 1.5rem;
+
+  --fw-regular: 400;
+  --fw-bold: 500;
+  --fw-black: 700;
+}
+/***** End theme Section *****/
+
+/***** css reset Section *****/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/***** End css reset Section *****/
+
+/***** Actual code start *****/
+body {
+  font-family: var(--ff-base);
+  font-size: var(--fs-400);
+  font-weight: var(--fw-regular);
+  padding: 2rem;
+  /* background-color: var(--clr-neutral-400); */
+  color: var(--clr-secondary-800);
+}
+
+main {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app-container {
+  background-color: #FFFBDA;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.2);;
+  max-width: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+.app-title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: var(--fw-black);
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-block: 35px 20px;
+}
+
+input,
+button {
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.582);
+}
+
+input {
+  padding: 5px 24px;
+  display: block;
+  width: 250px;
+  margin: 0 auto 35px;
+  font-size: var(--fs-800);
+  text-align: center;
+}
+
+.btn {
+  transition: transform 0.2s linear;
+  cursor: pointer;
+  font-size: 14px;
+}
+.btn:active {
+  transform: scale(0.9);
+}
+
+.submit-btn {
+  background-color: #114232;
+  color: white;
+  margin-right: 5px;
+}
+
+.play-again-btn {
+  background-color: #f1c93b;
+  color: white;
+}
+
+.all-guesses {
+  margin-top: 25px;
+}
+
+.result-message {
+  margin-top: 20px;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  transform: scale(1);
+  background-color: #cccccc;
+}

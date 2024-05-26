@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Vikash Kumar" />
+    <meta name="description" content="Guess the number" />
+    <title>Guess the number</title>
+    <!-- font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- style sheet and js file -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="app-container">
+        <header><h1 class="app-title">Guess the number</h1></header>
+        <section>
+          <form class="guess-form">
+            <label for="user-input" class="user-input-label"
+              >Enter a guess between 0 to 100
+            </label>
+            <input
+              type="number"
+              name="user-input"
+              id="user-input"
+              required
+              placeholder="Enter a number"
+              min="0"
+              max="100"
+              autocomplete="off"
+              autofocus
+            />
+            <button class="submit-btn btn">Submit</button>
+            <button type="button" class="play-again-btn btn">
+              Play Again!
+            </button>
+          </form>
+          <div class="result">
+            <p class="result-message"></p>
+            <p class="all-guesses"></p>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
